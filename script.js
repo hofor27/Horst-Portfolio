@@ -4,7 +4,8 @@ let currentLanguage = "en";
 const languageData = {
   en: {
     language: "English",
-
+    myintro: "Hi there 👋, I'm",
+    myposition: "I'm a Frontend Developer",
     headerName: "Horst",
     projectsHeading: "Projects",
     projectsCard1Title: "Guess My Number App",
@@ -24,6 +25,8 @@ const languageData = {
   },
   pt: {
     language: "Português",
+    myintro: "Olá pessoal 👋, eu sou",
+    myposition: "Sou um Desenvolvedor Frontend",
     headerName: "Horst",
     projectsHeading: "Projetos",
     projectsCard1Title: "Aplicativo Guess My Number",
@@ -43,6 +46,8 @@ const languageData = {
   },
   de: {
     language: "Deutsch",
+    myintro: "Hallo zusammen 👋, ich bin",
+    myposition: "Ich bin ein Frontend-Entwickler",
     headerName: "Horst",
     projectsHeading: "Projekte",
     projectsCard1Title: "Guess My Number App",
@@ -60,6 +65,27 @@ const languageData = {
     downloadButton: "Laden Sie meinen Lebenslauf herunter",
     copyrightText: "© Urheberrecht 2023 Horst Portfolio App",
   },
+  es: {
+    language: "Español",
+    myintro: "¡Hola! 👋, Soy",
+    myposition: "Soy un Desarrollador Frontend",
+    headerName: "Horst",
+    projectsHeading: "Proyectos",
+    projectsCard1Title: "Aplicación Adivina Mi Número",
+    projectsCard1Description:
+      "Esta es una aplicación creada con Vanilla JavaScript. ¡Permite a los usuarios adivinar el número correcto!",
+    projectsCard2Title: "Cita del Día",
+    projectsCard2Description:
+      "Esta es una aplicación creada con Vanilla JavaScript. ¡Muestra una cita aleatoria y su autor!",
+    skillsHeading: "Habilidades",
+    frontendSkillsTitle: "Frontend",
+    othersSkillsTitle: "Otras",
+    contactHeading: "Contacto",
+    contactParagraph:
+      "¿Quieres ponerte en contacto? Contáctame en cualquiera de las plataformas.",
+    downloadButton: "Descargar Mi Currículum",
+    copyrightText: "© Derechos de Autor 2023 Aplicación de Portafolio de Horst",
+  },
 };
 
 function updateLanguageUI() {
@@ -69,9 +95,13 @@ function updateLanguageUI() {
   languageBtn.innerHTML += '<i class="fas fa-caret-down"></i>';
 
   // Set other elements based on the selected language
+  document.querySelector(".intro-text").textContent =
+    languageData[currentLanguage].myintro;
+  document.querySelector(".my-position").textContent =
+    languageData[currentLanguage].myposition;
   document.querySelector(".header-name").textContent =
     languageData[currentLanguage].headerName;
-  document.querySelector(".project-heading").textContent =
+  document.querySelector("#project-heading").textContent =
     languageData[currentLanguage].projectsHeading;
   document.querySelectorAll(".project-card-content h3")[0].textContent =
     languageData[currentLanguage].projectsCard1Title;
@@ -81,17 +111,17 @@ function updateLanguageUI() {
     languageData[currentLanguage].projectsCard2Title;
   document.querySelectorAll(".project-card-content p")[1].textContent =
     languageData[currentLanguage].projectsCard2Description;
-  document.querySelector(".skills-heading").textContent =
+  document.querySelector("#skills-heading").textContent =
     languageData[currentLanguage].skillsHeading;
   document.querySelectorAll(".skills-details h3")[0].textContent =
     languageData[currentLanguage].frontendSkillsTitle;
   document.querySelectorAll(".skills-details h3")[1].textContent =
     languageData[currentLanguage].othersSkillsTitle;
-  document.querySelector(".contact-heading").textContent =
+  document.querySelector("#contact-heading").textContent =
     languageData[currentLanguage].contactHeading;
   document.querySelector(".contact-para").textContent =
     languageData[currentLanguage].contactParagraph;
-  document.querySelector("button").textContent =
+  document.querySelector("#download-btn").textContent =
     languageData[currentLanguage].downloadButton;
   document.querySelector(".copyright-text").textContent =
     languageData[currentLanguage].copyrightText;

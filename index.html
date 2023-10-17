@@ -24,7 +24,7 @@
 
   <body>
     <nav>
-      <h1 id="header-title">Horst Portfolio</h1>
+      <h1 id="header-title">Horst</h1>
       <div class="hamburger">
         <!-- ... (hamburger icon remains unchanged) ... -->
       </div>
@@ -38,38 +38,29 @@
               <span class="flag-icon flag-icon-us"></span> English
             </a>
             <a href="#" onclick="changeLanguage('pt')">
-              <span class="flag-icon flag-icon-pt"></span> Português
+              <span class="flag-icon flag-icon-br"></span> Português
             </a>
             <a href="#" onclick="changeLanguage('de')">
               <span class="flag-icon flag-icon-de"></span> Deutsch
+            </a>
+            <a href="#" onclick="changeLanguage('es')">
+              <span class="flag-icon flag-icon-es"></span> Espanhol
             </a>
           </div>
         </div>
         <ul class="nav-links">
           <li>
-            <a
-              style="font-size: 20px"
-              href="#projects"
-              class="project-heading"
-              id="projects-link"
+            <a style="font-size: 20px" href="#projects" id="project-heading"
               >Projects</a
             >
           </li>
           <li>
-            <a
-              style="font-size: 20px"
-              href="#skills"
-              class="skills-heading"
-              id="skills-link"
+            <a style="font-size: 20px" href="#skills" id="skills-heading"
               >Skills</a
             >
           </li>
           <li>
-            <a
-              style="font-size: 20px"
-              href="#contact"
-              class="contact-heading"
-              id="contact-link"
+            <a style="font-size: 20px" href="#contact" id="contact-heading"
               >Contact</a
             >
           </li>
@@ -80,8 +71,9 @@
     <section class="header-section">
       <div class="header-content">
         <h2>
-          Hi there 👋, I'm <br /><span class="header-name">Horst</span><br />I'm
-          a Frontend Developer
+          <span class="intro-text"></span> <br /><span class="header-name"
+            >Horst</span
+          ><br /><span class="my-position">I'm a Frontend Developer</span>
         </h2>
         <img src="./Header-Img.png" class="header-img" alt="" />
       </div>
@@ -104,12 +96,15 @@
     <div class="separator"></div>
 
     <section class="project-section" id="projects">
-      <h2 class="project-heading"></h2>
+      <h2 id="project-heading" class="project-heading"></h2>
       <!-- Card 1 -->
       <div class="project-card">
         <div class="project-card-content">
           <h3></h3>
-          <a target="_blank" href="">
+          <a
+            target="_blank"
+            href="https://venzula.github.io/Guess-my-Number-App/"
+          >
             <button>Demo</button>
           </a>
           <button>Github</button>
@@ -126,7 +121,10 @@
       <div class="project-card">
         <div class="project-card-content">
           <h3></h3>
-          <a target="_blank" href="">
+          <a
+            target="_blank"
+            href=" https://venzula.github.io/Quote-of-the-Day/"
+          >
             <button>Demo</button>
           </a>
           <button>Github</button>
@@ -145,7 +143,7 @@
 
     <!-- Skills Section Starts Here -->
     <section class="skills-section" id="skills">
-      <h2 class="skills-heading"></h2>
+      <h2 class="skills-heading" id="skills-heading"></h2>
       <div class="skills-details">
         <h3 class="skill-title">Frontend</h3>
         <div class="frontend-icons">
@@ -167,19 +165,31 @@
 
     <!-- Contact Section Starts Here -->
     <footer id="contact">
-      <h2 class="contact-heading"></h2>
+      <h2 class="contact-heading" id="contact-heading"></h2>
       <div class="contact-container">
         <div>
           <p class="contact-para"></p>
-          <div class="footer-social-icons">
-            <!-- ... (social icons remain unchanged) ... -->
-          </div>
         </div>
+
         <div>
           <a download href="./">
-            <button>Download My Resume</button>
+            <button id="download-btn">Download My Resume</button>
           </a>
         </div>
+      </div>
+      <div class="social-icons" style="margin-top: 3rem">
+        <a href="mailto:hofor27@gmail.com?subject=Hi!" target="_blank">
+          <img src="./gmail-img.png" alt="" />
+        </a>
+        <a href="https://github.com/hofor27" target="_blank">
+          <img src="./github-img.png" alt="" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/hofor-undefined-314458296/"
+          target="_blank"
+        >
+          <img src="./linkedin-img.png" alt="" />
+        </a>
       </div>
       <div class="copyright-text"></div>
     </footer>
