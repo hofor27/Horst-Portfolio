@@ -14,6 +14,16 @@ const languageData = {
     projectsCard2Title: "Quote of the Day",
     projectsCard2Description:
       "This is an app created with Vanilla JavaScript. It displays a random quote and author!",
+    projectsCard3Title: "Movies App",
+    projectsCard3Description:
+      "This is an app created with React. We can see Live movies data from the API and can see the movie details",
+    projectsCard4Title: "Web Services",
+    projectsCard4Description:
+      "This is an app created with HTML. It's my company website where you can see the list services we are providing",
+    projectsCard5Title: "Belmonte Consultoría",
+    projectsCard5Description:
+      "This is an app created with React. We provide consultation services",
+
     skillsHeading: "Skills",
     frontendSkillsTitle: "Frontend",
     othersSkillsTitle: "Others",
@@ -111,6 +121,18 @@ function updateLanguageUI() {
     languageData[currentLanguage].projectsCard2Title;
   document.querySelectorAll(".project-card-content p")[1].textContent =
     languageData[currentLanguage].projectsCard2Description;
+  document.querySelectorAll(".project-card-content h3")[2].textContent =
+    languageData[currentLanguage].projectsCard3Title;
+  document.querySelectorAll(".project-card-content p")[2].textContent =
+    languageData[currentLanguage].projectsCard3Description;
+  document.querySelectorAll(".project-card-content h3")[3].textContent =
+    languageData[currentLanguage].projectsCard4Title;
+  document.querySelectorAll(".project-card-content p")[3].textContent =
+    languageData[currentLanguage].projectsCard4Description;
+  document.querySelectorAll(".project-card-content h3")[4].textContent =
+    languageData[currentLanguage].projectsCard5Title;
+  document.querySelectorAll(".project-card-content p")[4].textContent =
+    languageData[currentLanguage].projectsCard5Description;
   document.querySelector("#skills-heading").textContent =
     languageData[currentLanguage].skillsHeading;
   document.querySelectorAll(".skills-details h3")[0].textContent =
