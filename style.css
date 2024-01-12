@@ -242,12 +242,11 @@ button {
   width: 30px;
   height: 20px;
   cursor: pointer;
-  color: white !important;
 }
 .line {
   background-color: white;
   height: 2px;
-  width: 100%;
+  width: 24px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -300,7 +299,7 @@ button {
     line-height: 30px;
     top: 8vh;
     left: 0;
-    padding: 20px 0;
+    padding: 60px 0;
   }
   .dropdown {
     display: block;
