@@ -45,6 +45,15 @@ const languageData = {
     projectsCard2Title: "Citação do Dia",
     projectsCard2Description:
       "Este é um aplicativo criado com Vanilla JavaScript. Ele exibe uma citação aleatória e o autor!",
+    projectsCard3Title: "Aplicativo de Filmes",
+    projectsCard3Description:
+      "Este é um aplicativo criado com React. Podemos ver dados de filmes ao vivo da API e visualizar os detalhes do filme.",
+    projectsCard4Title: "Serviços Web",
+    projectsCard4Description:
+      "Este é um aplicativo criado com HTML. É o site da minha empresa, onde você pode ver a lista de serviços que oferecemos.",
+    projectsCard5Title: "Belmonte Consultoría",
+    projectsCard5Description:
+      "Este é um aplicativo criado com React. Oferecemos serviços de consultoria.",
     skillsHeading: "Competências",
     frontendSkillsTitle: "Frontend",
     othersSkillsTitle: "Outros",
@@ -66,7 +75,18 @@ const languageData = {
     projectsCard2Title: "Zitat des Tages",
     projectsCard2Description:
       "Dies ist eine App, die mit Vanilla JavaScript erstellt wurde. Sie zeigt ein zufälliges Zitat und den Autor an!",
+    projectsCard3Title: "Filme App",
+    projectsCard3Description:
+      "Dies ist eine App, die mit React erstellt wurde. Hier können wir Live-Filmdaten von der API sehen und die Details des Films anzeigen.",
+    projectsCard4Title: "Webdienste",
+    projectsCard4Description:
+      "Dies ist eine App, die mit HTML erstellt wurde. Es handelt sich um die Website meines Unternehmens, auf der Sie die Liste der von uns angebotenen Dienstleistungen sehen können.",
+    projectsCard5Title: "Belmonte Consultoría",
+    projectsCard5Description:
+      "Dies ist eine App, die mit React erstellt wurde. Wir bieten Beratungsdienstleistungen an.",
+
     skillsHeading: "Fähigkeiten",
+
     frontendSkillsTitle: "Frontend",
     othersSkillsTitle: "Andere",
     contactHeading: "Kontakt",
@@ -87,6 +107,15 @@ const languageData = {
     projectsCard2Title: "Cita del Día",
     projectsCard2Description:
       "Esta es una aplicación creada con Vanilla JavaScript. ¡Muestra una cita aleatoria y su autor!",
+    projectsCard3Title: "Aplicación de Películas",
+    projectsCard3Description:
+      "Esta es una aplicación creada con React. Podemos ver datos en vivo de películas de la API y ver los detalles de la película.",
+    projectsCard4Title: "Servicios Web",
+    projectsCard4Description:
+      "Esta es una aplicación creada con HTML. Es el sitio web de mi empresa donde puedes ver la lista de servicios que ofrecemos.",
+    projectsCard5Title: "Belmonte Consultoría",
+    projectsCard5Description:
+      "Esta es una aplicación creada con React. Ofrecemos servicios de consultoría.",
     skillsHeading: "Habilidades",
     frontendSkillsTitle: "Frontend",
     othersSkillsTitle: "Otras",
